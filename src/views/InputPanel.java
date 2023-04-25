@@ -1,6 +1,7 @@
 package views;
 
-import javax.swing.BoxLayout;
+import java.awt.GridLayout;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -26,7 +27,7 @@ public class InputPanel  extends JPanel{
     private void setPanel(){
         this.add(this.label);
         this.add(this.field);
-        this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
+        this.setLayout(new GridLayout(1,2));
     }
     public void setLabel(String text){
         this.label.setText(text);
